@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    overflow: hidden;
+    font-size: 14;
+}
+*{
+    box-sizing:border-box;/*it will include boarder and padding into the screen of 100vh*/
+}
+.Container{
+    height:100vh;
+    /*border:2px solid red ;*/
+}
+.title-bar{
+    height:5vh;
+    background-color: #107C41;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+   
+    /*border:2px solid plum ;*/
+}
+.menu-bar{
+    height:5vh;
+    background-color: #107C41;
+    display: flex;
+    color: white;
+    /*border:2px solid yellow ;*/ 
+}
+.menu-item{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18;
+    display: flex;
+    align-items: center;
+}
+.selected{
+    background-color: #fff;
+    color:#107C41;
+}
+.menu-item.selected:hover{
+    background-color: #fff;
+    cursor:default;
+}
+.menu-item:hover{
+    background-color: #054d25;
+    cursor: pointer;
+}
+.menu-icon-bar{
+    height:6vh;
+   /* border:2px solid green ;*/
+   
+   background-color: rgb(241, 241, 241);
+  
+   display: flex;
+  align-items: center; 
+}
+.menu-icon{
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    display: flex;
+    align-items:center ;
+   
+   
+}
+.menu-icon:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    height: 100%;
+}
+.font-family-selector{
+  
+    width: 150px;
+}
+.selector{
+    height: 30px;
+    font-size: 18px;
+
+}
+.selector option{
+    font-size: 20px;
+}
+.formulae-bar{
+    height:6vh;
+    /*border:2px solid black ;*/
+}
+.data-container{
+    height:74vh;
+    /*border:2px solid pink ;*/
+}
+.sheet-bar{
+    height:4vh;
+   /* border:2px solid blue;*/
+   display: flex;
+   align-items: center;
+}
+.icon-left-scroll,.icon-right-scroll{
+    font-size: 30px;
+    color: #107C41;
+}
+.icon-left-scroll:hover, .icon-right-scroll:hover{
+    cursor: pointer;
+}
+.icon-add{
+    color: #107C41;
+   width: 40px;
+}
+.icon-add:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.sheet-tab-container{
+    border: 1px solid lightgrey;
+    width: 800px;
+}
+.scroller{
+    width: 70px;
+}
+.sheet-tab{
+    border-bottom: #054d25 4px solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid lightgrey;
+}
+.sheet-tab:hover{
+    cursor: default;
+}
