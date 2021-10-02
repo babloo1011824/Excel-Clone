@@ -88,9 +88,36 @@ body{
     /*border:2px solid black ;*/
 }
 .data-container{
-    height:74vh;
+
+    height:75vh;
+    display:flex;
+    flex-wrap: wrap;
     /*border:2px solid pink ;*/
 }
+
+.select-all{
+    width: 30px;
+    height: 30px;
+    border:1px solid lightgrey ;
+}
+.column-name-container{
+    width: calc(100vw - 30px);
+    height: 30px;
+    border:1px solid lightgrey ;
+    display: flex;
+}
+.row-name-container{
+    width: 30px;
+    height: calc(75vh - 30px) ;
+    border:1px solid lightgrey ;
+    overflow: hidden;
+}
+.input-cell-container{
+    width: calc(100vw - 30px);
+    height: calc(75vh - 30px);
+    border:1px solid lightgrey ;
+}
+
 .sheet-bar{
     height:4vh;
    /* border:2px solid blue;*/
@@ -131,4 +158,30 @@ body{
 }
 .sheet-tab:hover{
     cursor: default;
+}
+.column-name{
+   min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid lightgrey;
+    font-weight: "bold";
+}
+.row-name{
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
+
+}
+.cell-row{
+    display: flex;
+}
+.input-cell{
+    min-width: 100px;
+    height: 25px;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 }
